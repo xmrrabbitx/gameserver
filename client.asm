@@ -1,3 +1,7 @@
+
+;; include necessary lables
+
+
 section .data
 	;; contants values
     SYS_WRITE equ 1 ;; equ means equate its like = sign
@@ -50,6 +54,7 @@ section .bss
 section .text
     global main
 main:
+
 	;; create socket
     socket domain, type, protocol
 	;; check socket for errors
